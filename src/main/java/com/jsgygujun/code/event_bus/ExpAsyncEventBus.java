@@ -2,7 +2,6 @@ package com.jsgygujun.code.event_bus;
 
 import com.google.common.eventbus.AllowConcurrentEvents;
 import com.google.common.eventbus.AsyncEventBus;
-import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
 
 import java.util.concurrent.Executors;
