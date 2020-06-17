@@ -28,7 +28,8 @@ public class ExpAsyncEventBus {
         public EventListener(String name) {
             this.name = name;
         }
-        // 订阅方法，必须使用注解声明，且只能有一个参数，当有消息发布的时候，该方法自动被调用。
+        // 订阅方法，必须使用@Subscribe注解声明，且只能有一个参数，当有消息发布的时候，该方法自动被调用。
+        // 使用@AllowConcurrentEvents注解说明采用异步方式执行onMessage方法。
         @Subscribe
         @AllowConcurrentEvents
         public void onMessage(ExpEventBus.Event event) {
